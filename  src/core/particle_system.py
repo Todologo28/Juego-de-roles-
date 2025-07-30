@@ -1,5 +1,5 @@
 """
-Sistema de partículas épico para efectos visuales
+Sistema de partículas épico para efectos visuales - VERSIÓN CORREGIDA
 """
 
 import random
@@ -41,7 +41,8 @@ class Particle:
 
         # Fade out
         life_ratio = self.life_time / self.max_life_time
-        self.color[3] = life_ratio  # Alpha
+        if len(self.color) > 3:
+            self.color[3] = life_ratio  # Alpha
         self.size = self.initial_size * (0.5 + 0.5 * life_ratio)
 
     def render(self, renderer):
@@ -56,7 +57,11 @@ class Particle:
         glEnable(GL_BLEND)
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
 
-        glColor4f(*self.color)
+        if len(self.color) > 3:
+            glColor4f(*self.color)
+        else:
+            glColor3f(*self.color)
+
         renderer.draw_sphere(self.size, self.color[:3], 4, 4)
 
         glDisable(GL_BLEND)
@@ -332,4 +337,17 @@ class ParticleSystem:
         for particle in self.particles[:]:
             particle.update(dt)
             if not particle.alive:
-                self
+                self.particles.remove(particle)
+
+    def render(self):
+        """Renderizar todas las partículas"""
+        for particle in self.particles:
+            particle.render(self.renderer)
+
+    def clear(self):
+        """Limpiar todas las partículas"""
+        self.particles.clear()
+
+    def get_particle_count(self):
+        """Obtener número de partículas activas"""
+        return len(self.particles)

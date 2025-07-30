@@ -1,0 +1,106 @@
+{
+  "keyboard_controls": {
+    "movement": {
+      "move_up": "W",
+      "move_down": "S",
+      "move_left": "A",
+      "move_right": "D",
+      "run": "SHIFT",
+      "walk": "CTRL"
+    },
+    "combat": {
+      "attack": "1",
+      "magic_spell": "2",
+      "inventory": "3",
+      "defend": "4",
+      "use_item": "H",
+      "target_enemy": "TAB",
+      "confirm_action": "ENTER"
+    },
+    "interface": {
+      "pause_menu": "ESC",
+      "show_stats": "C",
+      "show_map": "M",
+      "show_inventory": "I",
+      "show_spells": "K",
+      "show_controls": "F1",
+      "quick_save": "F5",
+      "quick_load": "F9"
+    },
+    "camera": {
+      "rotate_left": "Q",
+      "rotate_right": "E",
+      "zoom_in": "PLUS",
+      "zoom_out": "MINUS",
+      "reset_camera": "R",
+      "free_camera": "F"
+    },
+    "character_selection": {
+      "select_mage": "1",
+      "select_knight": "2",
+      "confirm_selection": "ENTER",
+      "back": "ESC"
+    },
+    "enemy_selection": {
+      "select_goblin": "1",
+      "select_ogre": "2",
+      "select_dragon": "3",
+      "confirm_selection": "ENTER",
+      "back": "ESC"
+    },
+    "general": {
+      "quit_game": "Q",
+      "fullscreen_toggle": "F11",
+      "screenshot": "F12",
+      "debug_console": "TILDE"
+    }
+  },
+  "mouse_controls": {
+    "enabled": true,
+    "sensitivity": 1.0,
+    "invert_y_axis": false,
+    "actions": {
+      "left_click": "select",
+      "right_click": "context_menu",
+      "middle_click": "center_camera",
+      "scroll_up": "zoom_in",
+      "scroll_down": "zoom_out"
+    }
+  },
+  "gamepad_controls": {
+    "enabled": false,
+    "type": "xbox",
+    "deadzone": 0.2,
+    "vibration": true,
+    "buttons": {
+      "A": "confirm",
+      "B": "cancel",
+      "X": "attack",
+      "Y": "magic",
+      "LB": "defend",
+      "RB": "inventory",
+      "LT": "run",
+      "RT": "target",
+      "START": "pause",
+      "SELECT": "map",
+      "LSTICK": "move",
+      "RSTICK": "camera"
+    }
+  },
+  "accessibility": {
+    "enable_colorblind_support": false,
+    "high_contrast_mode": false,
+    "large_text": false,
+    "screen_reader_support": false,
+    "simplified_controls": false,
+    "auto_pause_on_focus_lost": true
+  },
+  "shortcuts": {
+    "quick_heal": "H",
+    "quick_mana": "M",
+    "quick_attack": "SPACE",
+    "skip_animation": "ENTER",
+    "toggle_ui": "U",
+    "toggle_fps": "F3"
+  }
+}

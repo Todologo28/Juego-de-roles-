@@ -1,0 +1,67 @@
+{
+  "game_settings": {
+    "title": "🎮 RPG 3D Épico - Batalla Definitiva",
+    "version": "1.0.0",
+    "developer": "Epic Games Studio",
+    "description": "Un RPG 3D épico con combate por turnos y efectos visuales impresionantes"
+  },
+  "graphics": {
+    "screen_width": 1200,
+    "screen_height": 800,
+    "fullscreen": false,
+    "vsync": true,
+    "fps_limit": 60,
+    "antialiasing": true,
+    "texture_quality": "high",
+    "shadow_quality": "medium",
+    "particle_density": "high",
+    "lighting_quality": "high"
+  },
+  "audio": {
+    "master_volume": 0.8,
+    "music_volume": 0.7,
+    "sfx_volume": 0.8,
+    "ambient_volume": 0.6,
+    "enable_procedural_audio": true,
+    "audio_quality": "high",
+    "enable_3d_audio": true
+  },
+  "gameplay": {
+    "difficulty": "normal",
+    "auto_save": true,
+    "auto_save_interval": 300,
+    "show_damage_numbers": true,
+    "show_critical_hits": true,
+    "combat_speed": "normal",
+    "animation_speed": 1.0,
+    "particle_effects": true,
+    "screen_shake": true
+  },
+  "controls": {
+    "mouse_sensitivity": 1.0,
+    "keyboard_repeat_rate": 0.1,
+    "enable_gamepad": false,
+    "invert_mouse_y": false
+  },
+  "advanced": {
+    "debug_mode": false,
+    "show_fps": false,
+    "wireframe_mode": false,
+    "god_mode": false,
+    "unlimited_mana": false,
+    "fast_animations": false,
+    "particle_limit": 1000,
+    "render_distance": 100.0
+  },
+  "language": {
+    "current_language": "es",
+    "available_languages": ["es", "en", "fr", "de", "pt"],
+    "font_size": "medium"
+  },
+  "save_data": {
+    "save_directory": "saves/",
+    "backup_saves": true,
+    "max_save_files": 10,
+    "compress_saves": true
+  }
+}

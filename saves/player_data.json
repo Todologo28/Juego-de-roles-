@@ -1,0 +1,85 @@
+{
+  "save_metadata": {
+    "version": "1.0.0",
+    "created_date": "2025-01-01T12:00:00Z",
+    "last_modified": "2025-01-01T12:00:00Z",
+    "save_slot": 1,
+    "playtime_seconds": 0,
+    "game_completed": false
+  },
+  "player_data": {
+    "name": "",
+    "character_class": "",
+    "level": 1,
+    "hp": 100,
+    "max_hp": 100,
+    "mp": 50,
+    "max_mp": 50,
+    "experience": 0,
+    "experience_to_next_level": 100,
+    "attack": 20,
+    "defense": 10,
+    "magic_power": 15,
+    "gold": 0,
+    "skill_points": 0
+  },
+  "inventory": {
+    "weapons": [],
+    "potions": [],
+    "equipment": [],
+    "key_items": [],
+    "materials": []
+  },
+  "equipped_items": {
+    "weapon": null,
+    "armor": null,
+    "accessory": null,
+    "ring": null
+  },
+  "progress": {
+    "current_stage": "character_select",
+    "defeated_enemies": [],
+    "completed_quests": [],
+    "unlocked_areas": [],
+    "discovered_secrets": []
+  },
+  "statistics": {
+    "total_battles": 0,
+    "total_victories": 0,
+    "total_defeats": 0,
+    "win_streak": 0,
+    "best_win_streak": 0,
+    "damage_dealt": 0,
+    "damage_taken": 0,
+    "spells_cast": 0,
+    "potions_used": 0,
+    "critical_hits": 0,
+    "perfect_battles": 0
+  },
+  "achievements": {
+    "first_victory": false,
+    "defeat_all_enemies": false,
+    "perfect_run": false,
+    "spell_master": false,
+    "potion_collector": false,
+    "damage_dealer": false,
+    "survivor": false,
+    "speed_runner": false
+  },
+  "settings_override": {
+    "preferred_difficulty": "normal",
+    "favorite_character": null,
+    "combat_preferences": {
+      "auto_target": false,
+      "show_damage_preview": true,
+      "quick_animations": false
+    }
+  },
+  "game_state": {
+    "current_enemy": null,
+    "battle_in_progress": false,
+    "last_save_location": "main_menu",
+    "temporary_buffs": [],
+    "active_effects": []
+  }
+}
