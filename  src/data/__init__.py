@@ -1,0 +1,1 @@
+"""Módulo data - Datos del juego"""

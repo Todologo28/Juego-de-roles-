@@ -1,0 +1,1 @@
+"""Módulo effects - Efectos visuales"""
