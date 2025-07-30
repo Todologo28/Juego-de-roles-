@@ -1,15 +1,8 @@
-"""
-Datos de enemigos y sus configuraciones
-"""
+# CORREGIR estas líneas en src/data/enemies.py:
 
-from data.game_data import EnemyData
-
-# ============================================================================
-# CONFIGURACIONES DE ENEMIGOS
-# ============================================================================
-
+# Línea 8-10 (corregir diccionario ENEMY_CONFIGS):
 ENEMY_CONFIGS = {
-    "duende": {
+    "goblin": {  # CAMBIAR: era "duende"
         "name": "🧌 Duende Siniestro",
         "level": 1,
         "hp": 80,
@@ -23,7 +16,7 @@ ENEMY_CONFIGS = {
         "resistances": ["poison"],
         "weaknesses": ["light"]
     },
-    "ogro": {
+    "ogre": {  # CAMBIAR: era "ogro"
         "name": "👹 Ogro Devastador",
         "level": 2,
         "hp": 150,
@@ -37,7 +30,7 @@ ENEMY_CONFIGS = {
         "resistances": ["physical"],
         "weaknesses": ["magic"]
     },
-    "dragon": {
+    "dragon": {  # YA ERA "dragon" - NO CAMBIAR
         "name": "🐉 Dragón Sombrío",
         "level": 3,
         "hp": 250,
@@ -53,12 +46,9 @@ ENEMY_CONFIGS = {
     }
 }
 
-# ============================================================================
-# DIÁLOGOS DE ENEMIGOS
-# ============================================================================
-
+# Línea 40-50 (corregir diccionario ENEMY_DIALOGUES):
 ENEMY_DIALOGUES = {
-    "duende": [
+    "goblin": [  # CAMBIAR: era "duende"
         "¡No saldrás vivo de aquí, intruso!",
         "¡Mi daga probará tu sangre!",
         "¡Las sombras me protegen!",
@@ -68,7 +58,7 @@ ENEMY_DIALOGUES = {
         "¡Jejeje... caerás como todos los demás!",
         "¡Mis hermanos escucharán de esto!"
     ],
-    "ogro": [
+    "ogre": [  # CAMBIAR: era "ogro"
         "¡OGRO APLASTARÁ HUESOS!",
         "¡TÚ SER COMIDA PARA OGRO!",
         "¡MAZA PESADA, TÚ FRÁGIL!",
@@ -78,7 +68,13 @@ ENEMY_DIALOGUES = {
         "¡TÚ NO PODER CON FUERZA DE OGRO!",
         "¡OGRO DESTRUIR TODO!"
     ],
-    "dragon": [
+    "dragon": [  # YA ERA "dragon" - NO CAMBIAR
         "¡Mortal insolente! ¡Conoce el poder ancestral!",
         "¡Mis llamas han consumido mil ejércitos!",
-        "
+        "¡Tu valor es admirable... pero inútil!",
+        "¡El fuego eterno será tu tumba!",
+        "¡Imposible... un simple mortal no puede...!",
+        "¡He dormido durante milenios esperando este momento!",
+        "¡Las llamas del inframundo arden en mi interior!"
+    ]
+}
